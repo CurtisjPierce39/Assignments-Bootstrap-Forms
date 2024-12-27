@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="padding-left: 20px; padding-top: 15px;">
+        <div>
+            <form class="needs-validation" novalidate>
+            <div class="form-group">
+                <label for="valid-email">Email address</label>
+                <input type="email" class="form-control" id="valid-email" aria-describedby="emailHelp" placeholder="Enter email">
+                <div class="valid-feedback">That works!!</div>
+            </div>
+            <div class="needs-validation" novalidate>
+                <label for="valid-password">Password</label>
+                <input type="password" class="form-control" id="valid-password" placeholder="Enter Password Here">
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" style="background-color: grey;" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                Agree to the Terms and Conditions
+                </label>
+                <div class="invalid-feedback">
+                    You must agree before submitting.
+                </div>
+            </div>
+            <button class="btn btn-warning" type="submit" style="border-radius: 6px">Submit</button>
+            </form>
+        </div>
+<script>
+
+(function() {
+'use strict';
+window.addEventListener('load', function() {
+
+    var forms = document.getElementsByClassName('needs-validation');
+
+    var validation = Array.prototype.filter.call(forms, function(form) {
+    form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    }, false);
+    });
+}, false);
+})();
+</script>
+    </body>
+</html>

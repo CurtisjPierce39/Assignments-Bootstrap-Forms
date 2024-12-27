@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+
+    </head>
+    <body style="padding: 10px;">
+        <form>
+            <div class="form-group row">
+                <div class="col-4">
+                    <label for="valid-first-name">First name</label>
+                    <input style="background-color: rgb(214, 214, 214);" type="text" class="form-control" id="first-name" placeholder="First name" value="" required>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label for="valid-last-name">Last name</label>
+                    <input style="background-color: rgb(214, 214, 214);" type="text" class="form-control" id="last-name" placeholder="Last name" value="" required>
+                    <div class="valid-feedback">
+                    Looks good!
+                    </div>
+                </div>
+                <div class="col-4">
+                    <label for="valid-username">Username</label>
+                    <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                    <input style="background-color: rgb(214, 214, 214);" type="text" class="form-control" id="valid-username" placeholder="Username" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="form-group row">
+                <div class="col-md-6">
+                    <label for="valid-city">City</label>
+                    <input style="background-color: rgb(214, 214, 214);" type="text" class="form-control" id="valid-city" placeholder="City" required>
+                    <div class="invalid-feedback">
+                    Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="valid-state">State</label>
+                    <input style="background-color: rgb(214, 214, 214);" type="text" class="form-control" id="valid-state" placeholder="State" required>
+                    <div class="invalid-feedback">
+                    Please provide a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="valid-zip">Zip</label>
+                    <input style="background-color: rgb(214, 214, 214);" type="text" class="form-control" id="valid-zip" placeholder="Zip" required>
+                    <div class="invalid-feedback">
+                    Please provide a valid zip.
+                    </div>
+                </div>
+                </div>
+                <div class="form-group">
+                <div class="form-check">
+                    <input style="background-color: rgb(214, 214, 214);" class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                    You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-dark" type="submit">Submit form</button>
+        </form>
+
+    </body>
+</html>
